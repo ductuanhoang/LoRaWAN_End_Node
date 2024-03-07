@@ -1,8 +1,0 @@
-radio_board_if.c:57:9:RBI_Init	1
-radio_board_if.c:121:9:RBI_DeInit	1
-radio_board_if.c:167:9:RBI_ConfigRFSwitch	5
-radio_board_if.c:251:9:RBI_GetTxConfig	1
-radio_board_if.c:274:9:RBI_GetWakeUpTime	1
-radio_board_if.c:297:9:RBI_IsTCXO	1
-radio_board_if.c:320:9:RBI_IsDCDC	1
-radio_board_if.c:343:9:RBI_GetRFOMaxPowerConfig	2
