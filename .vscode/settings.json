@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "sys_sensors.h": "c",
+        "hdc1080.h": "c",
+        "stdint.h": "c"
+    }
+}

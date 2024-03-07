@@ -1,0 +1,2 @@
+hdc1080.c:59:6:hdc1080_init	4
+hdc1080.c:97:9:hdc1080_event_read	1

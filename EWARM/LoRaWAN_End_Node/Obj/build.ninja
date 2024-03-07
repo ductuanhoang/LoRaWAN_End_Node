@@ -1,0 +1,198 @@
+#Generating source browse information for project LoRaWAN_End_Node
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build adc.pbi : index adc.xcl
+build adc_if.pbi : index adc_if.xcl
+build dma.pbi : index dma.xcl
+build flash_if.pbi : index flash_if.xcl
+build gpio.pbi : index gpio.xcl
+build i2c.pbi : index i2c.xcl
+build main.pbi : index main.xcl
+build rtc.pbi : index rtc.xcl
+build stm32_lpm_if.pbi : index stm32_lpm_if.xcl
+build stm32wlxx_hal_msp.pbi : index stm32wlxx_hal_msp.xcl
+build stm32wlxx_it.pbi : index stm32wlxx_it.xcl
+build subghz.pbi : index subghz.xcl
+build sys_app.pbi : index sys_app.xcl
+build sys_debug.pbi : index sys_debug.xcl
+build sys_sensors.pbi : index sys_sensors.xcl
+build timer_if.pbi : index timer_if.xcl
+build usart.pbi : index usart.xcl
+build usart_if.pbi : index usart_if.xcl
+build app_lorawan.pbi : index app_lorawan.xcl
+build CayenneLpp.pbi : index CayenneLpp.xcl
+build lora_app.pbi : index lora_app.xcl
+build lora_info.pbi : index lora_info.xcl
+build radio_board_if.pbi : index radio_board_if.xcl
+build stm32wlxx_nucleo.pbi : index stm32wlxx_nucleo.xcl
+build stm32wlxx_nucleo_radio.pbi : index stm32wlxx_nucleo_radio.xcl
+build system_stm32wlxx.pbi : index system_stm32wlxx.xcl
+build stm32wlxx_hal.pbi : index stm32wlxx_hal.xcl
+build stm32wlxx_hal.pbi : index stm32wlxx_hal.xcl
+build stm32wlxx_hal_adc.pbi : index stm32wlxx_hal_adc.xcl
+build stm32wlxx_hal_adc.pbi : index stm32wlxx_hal_adc.xcl
+build stm32wlxx_hal_adc_ex.pbi : index stm32wlxx_hal_adc_ex.xcl
+build stm32wlxx_hal_adc_ex.pbi : index stm32wlxx_hal_adc_ex.xcl
+build stm32wlxx_hal_cortex.pbi : index stm32wlxx_hal_cortex.xcl
+build stm32wlxx_hal_cortex.pbi : index stm32wlxx_hal_cortex.xcl
+build stm32wlxx_hal_dma.pbi : index stm32wlxx_hal_dma.xcl
+build stm32wlxx_hal_dma.pbi : index stm32wlxx_hal_dma.xcl
+build stm32wlxx_hal_dma_ex.pbi : index stm32wlxx_hal_dma_ex.xcl
+build stm32wlxx_hal_dma_ex.pbi : index stm32wlxx_hal_dma_ex.xcl
+build stm32wlxx_hal_exti.pbi : index stm32wlxx_hal_exti.xcl
+build stm32wlxx_hal_exti.pbi : index stm32wlxx_hal_exti.xcl
+build stm32wlxx_hal_flash.pbi : index stm32wlxx_hal_flash.xcl
+build stm32wlxx_hal_flash.pbi : index stm32wlxx_hal_flash.xcl
+build stm32wlxx_hal_flash_ex.pbi : index stm32wlxx_hal_flash_ex.xcl
+build stm32wlxx_hal_flash_ex.pbi : index stm32wlxx_hal_flash_ex.xcl
+build stm32wlxx_hal_gpio.pbi : index stm32wlxx_hal_gpio.xcl
+build stm32wlxx_hal_gpio.pbi : index stm32wlxx_hal_gpio.xcl
+build stm32wlxx_hal_i2c.pbi : index stm32wlxx_hal_i2c.xcl
+build stm32wlxx_hal_i2c_ex.pbi : index stm32wlxx_hal_i2c_ex.xcl
+build stm32wlxx_hal_pwr.pbi : index stm32wlxx_hal_pwr.xcl
+build stm32wlxx_hal_pwr.pbi : index stm32wlxx_hal_pwr.xcl
+build stm32wlxx_hal_pwr_ex.pbi : index stm32wlxx_hal_pwr_ex.xcl
+build stm32wlxx_hal_pwr_ex.pbi : index stm32wlxx_hal_pwr_ex.xcl
+build stm32wlxx_hal_rcc.pbi : index stm32wlxx_hal_rcc.xcl
+build stm32wlxx_hal_rcc.pbi : index stm32wlxx_hal_rcc.xcl
+build stm32wlxx_hal_rcc_ex.pbi : index stm32wlxx_hal_rcc_ex.xcl
+build stm32wlxx_hal_rcc_ex.pbi : index stm32wlxx_hal_rcc_ex.xcl
+build stm32wlxx_hal_rtc.pbi : index stm32wlxx_hal_rtc.xcl
+build stm32wlxx_hal_rtc.pbi : index stm32wlxx_hal_rtc.xcl
+build stm32wlxx_hal_rtc_ex.pbi : index stm32wlxx_hal_rtc_ex.xcl
+build stm32wlxx_hal_rtc_ex.pbi : index stm32wlxx_hal_rtc_ex.xcl
+build stm32wlxx_hal_subghz.pbi : index stm32wlxx_hal_subghz.xcl
+build stm32wlxx_hal_subghz.pbi : index stm32wlxx_hal_subghz.xcl
+build stm32wlxx_hal_tim.pbi : index stm32wlxx_hal_tim.xcl
+build stm32wlxx_hal_tim.pbi : index stm32wlxx_hal_tim.xcl
+build stm32wlxx_hal_tim_ex.pbi : index stm32wlxx_hal_tim_ex.xcl
+build stm32wlxx_hal_tim_ex.pbi : index stm32wlxx_hal_tim_ex.xcl
+build stm32wlxx_hal_uart.pbi : index stm32wlxx_hal_uart.xcl
+build stm32wlxx_hal_uart.pbi : index stm32wlxx_hal_uart.xcl
+build stm32wlxx_hal_uart_ex.pbi : index stm32wlxx_hal_uart_ex.xcl
+build stm32wlxx_hal_uart_ex.pbi : index stm32wlxx_hal_uart_ex.xcl
+build stm32wlxx_ll_adc.pbi : index stm32wlxx_ll_adc.xcl
+build stm32wlxx_ll_adc.pbi : index stm32wlxx_ll_adc.xcl
+build cmac.pbi : index cmac.xcl
+build cmac.pbi : index cmac.xcl
+build LmHandler.pbi : index LmHandler.xcl
+build LmHandler.pbi : index LmHandler.xcl
+build LmhpCompliance.pbi : index LmhpCompliance.xcl
+build LmhpCompliance.pbi : index LmhpCompliance.xcl
+build LmhpPackagesRegistration.pbi : index LmhpPackagesRegistration.xcl
+build LoRaMac.pbi : index LoRaMac.xcl
+build LoRaMac.pbi : index LoRaMac.xcl
+build LoRaMacAdr.pbi : index LoRaMacAdr.xcl
+build LoRaMacAdr.pbi : index LoRaMacAdr.xcl
+build LoRaMacClassB.pbi : index LoRaMacClassB.xcl
+build LoRaMacClassB.pbi : index LoRaMacClassB.xcl
+build LoRaMacCommands.pbi : index LoRaMacCommands.xcl
+build LoRaMacCommands.pbi : index LoRaMacCommands.xcl
+build LoRaMacConfirmQueue.pbi : index LoRaMacConfirmQueue.xcl
+build LoRaMacConfirmQueue.pbi : index LoRaMacConfirmQueue.xcl
+build LoRaMacCrypto.pbi : index LoRaMacCrypto.xcl
+build LoRaMacCrypto.pbi : index LoRaMacCrypto.xcl
+build LoRaMacParser.pbi : index LoRaMacParser.xcl
+build LoRaMacParser.pbi : index LoRaMacParser.xcl
+build LoRaMacSerializer.pbi : index LoRaMacSerializer.xcl
+build LoRaMacSerializer.pbi : index LoRaMacSerializer.xcl
+build lorawan_aes.pbi : index lorawan_aes.xcl
+build lorawan_aes.pbi : index lorawan_aes.xcl
+build NvmDataMgmt.pbi : index NvmDataMgmt.xcl
+build NvmDataMgmt.pbi : index NvmDataMgmt.xcl
+build Region.pbi : index Region.xcl
+build Region.pbi : index Region.xcl
+build RegionAS923.pbi : index RegionAS923.xcl
+build RegionAS923.pbi : index RegionAS923.xcl
+build RegionAU915.pbi : index RegionAU915.xcl
+build RegionAU915.pbi : index RegionAU915.xcl
+build RegionBaseUS.pbi : index RegionBaseUS.xcl
+build RegionBaseUS.pbi : index RegionBaseUS.xcl
+build RegionCN470.pbi : index RegionCN470.xcl
+build RegionCN470.pbi : index RegionCN470.xcl
+build RegionCN470A20.pbi : index RegionCN470A20.xcl
+build RegionCN470A20.pbi : index RegionCN470A20.xcl
+build RegionCN470A26.pbi : index RegionCN470A26.xcl
+build RegionCN470A26.pbi : index RegionCN470A26.xcl
+build RegionCN470B20.pbi : index RegionCN470B20.xcl
+build RegionCN470B20.pbi : index RegionCN470B20.xcl
+build RegionCN470B26.pbi : index RegionCN470B26.xcl
+build RegionCN470B26.pbi : index RegionCN470B26.xcl
+build RegionCN779.pbi : index RegionCN779.xcl
+build RegionCN779.pbi : index RegionCN779.xcl
+build RegionCommon.pbi : index RegionCommon.xcl
+build RegionCommon.pbi : index RegionCommon.xcl
+build RegionEU433.pbi : index RegionEU433.xcl
+build RegionEU433.pbi : index RegionEU433.xcl
+build RegionEU868.pbi : index RegionEU868.xcl
+build RegionEU868.pbi : index RegionEU868.xcl
+build RegionIN865.pbi : index RegionIN865.xcl
+build RegionIN865.pbi : index RegionIN865.xcl
+build RegionKR920.pbi : index RegionKR920.xcl
+build RegionKR920.pbi : index RegionKR920.xcl
+build RegionRU864.pbi : index RegionRU864.xcl
+build RegionRU864.pbi : index RegionRU864.xcl
+build RegionUS915.pbi : index RegionUS915.xcl
+build RegionUS915.pbi : index RegionUS915.xcl
+build soft-se.pbi : index soft-se.xcl
+build soft-se.pbi : index soft-se.xcl
+build utilities.pbi : index utilities.xcl
+build utilities.pbi : index utilities.xcl
+build radio.pbi : index radio.xcl
+build radio.pbi : index radio.xcl
+build radio_driver.pbi : index radio_driver.xcl
+build radio_driver.pbi : index radio_driver.xcl
+build radio_fw.pbi : index radio_fw.xcl
+build radio_fw.pbi : index radio_fw.xcl
+build stm32_adv_trace.pbi : index stm32_adv_trace.xcl
+build stm32_adv_trace.pbi : index stm32_adv_trace.xcl
+build stm32_lpm.pbi : index stm32_lpm.xcl
+build stm32_lpm.pbi : index stm32_lpm.xcl
+build stm32_mem.pbi : index stm32_mem.xcl
+build stm32_mem.pbi : index stm32_mem.xcl
+build stm32_seq.pbi : index stm32_seq.xcl
+build stm32_seq.pbi : index stm32_seq.xcl
+build stm32_systime.pbi : index stm32_systime.xcl
+build stm32_systime.pbi : index stm32_systime.xcl
+build stm32_timer.pbi : index stm32_timer.xcl
+build stm32_timer.pbi : index stm32_timer.xcl
+build stm32_tiny_sscanf.pbi : index stm32_tiny_sscanf.xcl
+build stm32_tiny_sscanf.pbi : index stm32_tiny_sscanf.xcl
+build stm32_tiny_vsnprintf.pbi : index stm32_tiny_vsnprintf.xcl
+build stm32_tiny_vsnprintf.pbi : index stm32_tiny_vsnprintf.xcl
+build LoRaWAN_End_Node_part0.pbi : link adc.pbi adc_if.pbi dma.pbi flash_if.pbi gpio.pbi i2c.pbi main.pbi rtc.pbi stm32_lpm_if.pbi stm32wlxx_hal_msp.pbi stm32wlxx_it.pbi subghz.pbi sys_app.pbi
+build LoRaWAN_End_Node_part1.pbi : link sys_debug.pbi sys_sensors.pbi timer_if.pbi usart.pbi usart_if.pbi app_lorawan.pbi CayenneLpp.pbi lora_app.pbi lora_info.pbi radio_board_if.pbi stm32wlxx_nucleo.pbi stm32wlxx_nucleo_radio.pbi system_stm32wlxx.pbi
+build LoRaWAN_End_Node_part2.pbi : link stm32wlxx_hal.pbi stm32wlxx_hal.pbi stm32wlxx_hal_adc.pbi stm32wlxx_hal_adc.pbi stm32wlxx_hal_adc_ex.pbi stm32wlxx_hal_adc_ex.pbi stm32wlxx_hal_cortex.pbi stm32wlxx_hal_cortex.pbi stm32wlxx_hal_dma.pbi stm32wlxx_hal_dma.pbi stm32wlxx_hal_dma_ex.pbi stm32wlxx_hal_dma_ex.pbi stm32wlxx_hal_exti.pbi
+build LoRaWAN_End_Node_part3.pbi : link stm32wlxx_hal_exti.pbi stm32wlxx_hal_flash.pbi stm32wlxx_hal_flash.pbi stm32wlxx_hal_flash_ex.pbi stm32wlxx_hal_flash_ex.pbi stm32wlxx_hal_gpio.pbi stm32wlxx_hal_gpio.pbi stm32wlxx_hal_i2c.pbi stm32wlxx_hal_i2c_ex.pbi stm32wlxx_hal_pwr.pbi stm32wlxx_hal_pwr.pbi stm32wlxx_hal_pwr_ex.pbi stm32wlxx_hal_pwr_ex.pbi
+build LoRaWAN_End_Node_part4.pbi : link stm32wlxx_hal_rcc.pbi stm32wlxx_hal_rcc.pbi stm32wlxx_hal_rcc_ex.pbi stm32wlxx_hal_rcc_ex.pbi stm32wlxx_hal_rtc.pbi stm32wlxx_hal_rtc.pbi stm32wlxx_hal_rtc_ex.pbi stm32wlxx_hal_rtc_ex.pbi stm32wlxx_hal_subghz.pbi stm32wlxx_hal_subghz.pbi stm32wlxx_hal_tim.pbi stm32wlxx_hal_tim.pbi stm32wlxx_hal_tim_ex.pbi
+build LoRaWAN_End_Node_part5.pbi : link stm32wlxx_hal_tim_ex.pbi stm32wlxx_hal_uart.pbi stm32wlxx_hal_uart.pbi stm32wlxx_hal_uart_ex.pbi stm32wlxx_hal_uart_ex.pbi stm32wlxx_ll_adc.pbi stm32wlxx_ll_adc.pbi cmac.pbi cmac.pbi LmHandler.pbi LmHandler.pbi LmhpCompliance.pbi LmhpCompliance.pbi
+build LoRaWAN_End_Node_part6.pbi : link LmhpPackagesRegistration.pbi LoRaMac.pbi LoRaMac.pbi LoRaMacAdr.pbi LoRaMacAdr.pbi LoRaMacClassB.pbi LoRaMacClassB.pbi LoRaMacCommands.pbi LoRaMacCommands.pbi LoRaMacConfirmQueue.pbi LoRaMacConfirmQueue.pbi LoRaMacCrypto.pbi LoRaMacCrypto.pbi
+build LoRaWAN_End_Node_part7.pbi : link LoRaMacParser.pbi LoRaMacParser.pbi LoRaMacSerializer.pbi LoRaMacSerializer.pbi lorawan_aes.pbi lorawan_aes.pbi NvmDataMgmt.pbi NvmDataMgmt.pbi Region.pbi Region.pbi RegionAS923.pbi RegionAS923.pbi RegionAU915.pbi
+build LoRaWAN_End_Node_part8.pbi : link RegionAU915.pbi RegionBaseUS.pbi RegionBaseUS.pbi RegionCN470.pbi RegionCN470.pbi RegionCN470A20.pbi RegionCN470A20.pbi RegionCN470A26.pbi RegionCN470A26.pbi RegionCN470B20.pbi RegionCN470B20.pbi RegionCN470B26.pbi RegionCN470B26.pbi
+build LoRaWAN_End_Node_part9.pbi : link RegionCN779.pbi RegionCN779.pbi RegionCommon.pbi RegionCommon.pbi RegionEU433.pbi RegionEU433.pbi RegionEU868.pbi RegionEU868.pbi RegionIN865.pbi RegionIN865.pbi RegionKR920.pbi RegionKR920.pbi RegionRU864.pbi
+build LoRaWAN_End_Node_part10.pbi : link RegionRU864.pbi RegionUS915.pbi RegionUS915.pbi soft-se.pbi soft-se.pbi utilities.pbi utilities.pbi radio.pbi radio.pbi radio_driver.pbi radio_driver.pbi radio_fw.pbi radio_fw.pbi
+build LoRaWAN_End_Node_part11.pbi : link stm32_adv_trace.pbi stm32_adv_trace.pbi stm32_lpm.pbi stm32_lpm.pbi stm32_mem.pbi stm32_mem.pbi stm32_seq.pbi stm32_seq.pbi stm32_systime.pbi stm32_systime.pbi stm32_timer.pbi stm32_timer.pbi stm32_tiny_sscanf.pbi
+build LoRaWAN_End_Node_part12.pbi : link stm32_tiny_sscanf.pbi stm32_tiny_vsnprintf.pbi stm32_tiny_vsnprintf.pbi
+build LoRaWAN_End_Node.pbd : link LoRaWAN_End_Node_part0.pbi LoRaWAN_End_Node_part1.pbi LoRaWAN_End_Node_part2.pbi LoRaWAN_End_Node_part3.pbi LoRaWAN_End_Node_part4.pbi LoRaWAN_End_Node_part5.pbi LoRaWAN_End_Node_part6.pbi LoRaWAN_End_Node_part7.pbi LoRaWAN_End_Node_part8.pbi LoRaWAN_End_Node_part9.pbi LoRaWAN_End_Node_part10.pbi LoRaWAN_End_Node_part11.pbi LoRaWAN_End_Node_part12.pbi
+build LoRaWAN_End_Node.pbw : browsedata LoRaWAN_End_Node.pbd
+
+

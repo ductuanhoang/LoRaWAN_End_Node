@@ -1,0 +1,13 @@
+LoRaMacConfirmQueue.c:129:28:GetElement.constprop	5
+LoRaMacConfirmQueue.c:151:6:LoRaMacConfirmQueueInit	1
+LoRaMacConfirmQueue.c:168:6:LoRaMacConfirmQueueAdd	3
+LoRaMacConfirmQueue.c:193:6:LoRaMacConfirmQueueRemoveLast	3
+LoRaMacConfirmQueue.c:208:6:LoRaMacConfirmQueueRemoveFirst	3
+LoRaMacConfirmQueue.c:223:6:LoRaMacConfirmQueueSetStatus	3
+LoRaMacConfirmQueue.c:238:26:LoRaMacConfirmQueueGetStatus	3
+LoRaMacConfirmQueue.c:253:6:LoRaMacConfirmQueueSetStatusCmn	5
+LoRaMacConfirmQueue.c:275:26:LoRaMacConfirmQueueGetStatusCmn	1
+LoRaMacConfirmQueue.c:280:6:LoRaMacConfirmQueueIsCmdActive	1
+LoRaMacConfirmQueue.c:289:6:LoRaMacConfirmQueueHandleCb	4
+LoRaMacConfirmQueue.c:324:9:LoRaMacConfirmQueueGetCnt	1
+LoRaMacConfirmQueue.c:329:6:LoRaMacConfirmQueueIsFull	1

@@ -1,0 +1,10 @@
+LoRaMacCommands.c:305:24:LoRaMacCommandsInit	1
+LoRaMacCommands.c:315:24:LoRaMacCommandsAddCmd	8
+LoRaMacCommands.c:348:24:LoRaMacCommandsRemoveCmd	7
+LoRaMacCommands.c:372:24:LoRaMacCommandsGetCmd	3
+LoRaMacCommands.c:396:24:LoRaMacCommandsRemoveNoneStickyCmds	3
+LoRaMacCommands.c:422:24:LoRaMacCommandsRemoveStickyAnsCmds	4
+LoRaMacCommands.c:444:24:LoRaMacCommandsGetSizeSerializedCmds	2
+LoRaMacCommands.c:454:24:LoRaMacCommandsSerializeCmds	6
+LoRaMacCommands.c:497:24:LoRaMacCommandsStickyCmdsPending	4
+LoRaMacCommands.c:523:9:LoRaMacCommandsGetCmdSize	2

@@ -1,0 +1,13 @@
+D:/2.upwork/83.Lora_water_leak/Example_code/en.stm32cubewl_v1-2-0/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/sys_app.c:299:13:tiny_snprintf_like.constprop	16	static
+D:/2.upwork/83.Lora_water_leak/Example_code/en.stm32cubewl_v1-2-0/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/sys_app.c:263:13:TimestampNow	32	static
+D:/2.upwork/83.Lora_water_leak/Example_code/en.stm32cubewl_v1-2-0/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/sys_app.c:92:6:SystemApp_Init	8	static
+D:/2.upwork/83.Lora_water_leak/Example_code/en.stm32cubewl_v1-2-0/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/sys_app.c:143:6:UTIL_SEQ_Idle	0	static
+D:/2.upwork/83.Lora_water_leak/Example_code/en.stm32cubewl_v1-2-0/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/sys_app.c:154:9:GetBatteryLevel	0	static
+D:/2.upwork/83.Lora_water_leak/Example_code/en.stm32cubewl_v1-2-0/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/sys_app.c:186:9:GetTemperatureLevel	32	static
+D:/2.upwork/83.Lora_water_leak/Example_code/en.stm32cubewl_v1-2-0/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/sys_app.c:200:6:GetUniqueId	16	static
+D:/2.upwork/83.Lora_water_leak/Example_code/en.stm32cubewl_v1-2-0/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/sys_app.c:240:6:GetDevAddr	16	static
+D:/2.upwork/83.Lora_water_leak/Example_code/en.stm32cubewl_v1-2-0/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/sys_app.c:277:6:UTIL_ADV_TRACE_PreSendHook	0	static
+D:/2.upwork/83.Lora_water_leak/Example_code/en.stm32cubewl_v1-2-0/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/sys_app.c:288:6:UTIL_ADV_TRACE_PostSendHook	0	static
+D:/2.upwork/83.Lora_water_leak/Example_code/en.stm32cubewl_v1-2-0/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/sys_app.c:322:19:HAL_InitTick	0	static
+D:/2.upwork/83.Lora_water_leak/Example_code/en.stm32cubewl_v1-2-0/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/sys_app.c:337:10:HAL_GetTick	0	static
+D:/2.upwork/83.Lora_water_leak/Example_code/en.stm32cubewl_v1-2-0/STM32Cube_FW_WL_V1.2.0/Projects/NUCLEO-WL55JC/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/sys_app.c:369:6:HAL_Delay	8	static
