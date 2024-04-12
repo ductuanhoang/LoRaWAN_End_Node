@@ -437,6 +437,7 @@ void LoRaWAN_Init(void)
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
+	APP_LOG(TS_OFF, VLEVEL_M, "button called\r\n");
   switch (GPIO_Pin)
   {
     case  BUT1_Pin:

@@ -21,7 +21,6 @@ rule browsedata
 
 #Build steps
 build adc.pbi : index adc.xcl
-build adc_if.pbi : index adc_if.xcl
 build dma.pbi : index dma.xcl
 build flash_if.pbi : index flash_if.xcl
 build gpio.pbi : index gpio.xcl
@@ -179,19 +178,19 @@ build stm32_tiny_sscanf.pbi : index stm32_tiny_sscanf.xcl
 build stm32_tiny_sscanf.pbi : index stm32_tiny_sscanf.xcl
 build stm32_tiny_vsnprintf.pbi : index stm32_tiny_vsnprintf.xcl
 build stm32_tiny_vsnprintf.pbi : index stm32_tiny_vsnprintf.xcl
-build LoRaWAN_End_Node_part0.pbi : link adc.pbi adc_if.pbi dma.pbi flash_if.pbi gpio.pbi i2c.pbi main.pbi rtc.pbi stm32_lpm_if.pbi stm32wlxx_hal_msp.pbi stm32wlxx_it.pbi subghz.pbi sys_app.pbi
-build LoRaWAN_End_Node_part1.pbi : link sys_debug.pbi sys_sensors.pbi timer_if.pbi usart.pbi usart_if.pbi app_lorawan.pbi CayenneLpp.pbi lora_app.pbi lora_info.pbi radio_board_if.pbi stm32wlxx_nucleo.pbi stm32wlxx_nucleo_radio.pbi system_stm32wlxx.pbi
-build LoRaWAN_End_Node_part2.pbi : link stm32wlxx_hal.pbi stm32wlxx_hal.pbi stm32wlxx_hal_adc.pbi stm32wlxx_hal_adc.pbi stm32wlxx_hal_adc_ex.pbi stm32wlxx_hal_adc_ex.pbi stm32wlxx_hal_cortex.pbi stm32wlxx_hal_cortex.pbi stm32wlxx_hal_dma.pbi stm32wlxx_hal_dma.pbi stm32wlxx_hal_dma_ex.pbi stm32wlxx_hal_dma_ex.pbi stm32wlxx_hal_exti.pbi
-build LoRaWAN_End_Node_part3.pbi : link stm32wlxx_hal_exti.pbi stm32wlxx_hal_flash.pbi stm32wlxx_hal_flash.pbi stm32wlxx_hal_flash_ex.pbi stm32wlxx_hal_flash_ex.pbi stm32wlxx_hal_gpio.pbi stm32wlxx_hal_gpio.pbi stm32wlxx_hal_i2c.pbi stm32wlxx_hal_i2c_ex.pbi stm32wlxx_hal_pwr.pbi stm32wlxx_hal_pwr.pbi stm32wlxx_hal_pwr_ex.pbi stm32wlxx_hal_pwr_ex.pbi
-build LoRaWAN_End_Node_part4.pbi : link stm32wlxx_hal_rcc.pbi stm32wlxx_hal_rcc.pbi stm32wlxx_hal_rcc_ex.pbi stm32wlxx_hal_rcc_ex.pbi stm32wlxx_hal_rtc.pbi stm32wlxx_hal_rtc.pbi stm32wlxx_hal_rtc_ex.pbi stm32wlxx_hal_rtc_ex.pbi stm32wlxx_hal_subghz.pbi stm32wlxx_hal_subghz.pbi stm32wlxx_hal_tim.pbi stm32wlxx_hal_tim.pbi stm32wlxx_hal_tim_ex.pbi
-build LoRaWAN_End_Node_part5.pbi : link stm32wlxx_hal_tim_ex.pbi stm32wlxx_hal_uart.pbi stm32wlxx_hal_uart.pbi stm32wlxx_hal_uart_ex.pbi stm32wlxx_hal_uart_ex.pbi stm32wlxx_ll_adc.pbi stm32wlxx_ll_adc.pbi cmac.pbi cmac.pbi LmHandler.pbi LmHandler.pbi LmhpCompliance.pbi LmhpCompliance.pbi
-build LoRaWAN_End_Node_part6.pbi : link LmhpPackagesRegistration.pbi LoRaMac.pbi LoRaMac.pbi LoRaMacAdr.pbi LoRaMacAdr.pbi LoRaMacClassB.pbi LoRaMacClassB.pbi LoRaMacCommands.pbi LoRaMacCommands.pbi LoRaMacConfirmQueue.pbi LoRaMacConfirmQueue.pbi LoRaMacCrypto.pbi LoRaMacCrypto.pbi
-build LoRaWAN_End_Node_part7.pbi : link LoRaMacParser.pbi LoRaMacParser.pbi LoRaMacSerializer.pbi LoRaMacSerializer.pbi lorawan_aes.pbi lorawan_aes.pbi NvmDataMgmt.pbi NvmDataMgmt.pbi Region.pbi Region.pbi RegionAS923.pbi RegionAS923.pbi RegionAU915.pbi
-build LoRaWAN_End_Node_part8.pbi : link RegionAU915.pbi RegionBaseUS.pbi RegionBaseUS.pbi RegionCN470.pbi RegionCN470.pbi RegionCN470A20.pbi RegionCN470A20.pbi RegionCN470A26.pbi RegionCN470A26.pbi RegionCN470B20.pbi RegionCN470B20.pbi RegionCN470B26.pbi RegionCN470B26.pbi
-build LoRaWAN_End_Node_part9.pbi : link RegionCN779.pbi RegionCN779.pbi RegionCommon.pbi RegionCommon.pbi RegionEU433.pbi RegionEU433.pbi RegionEU868.pbi RegionEU868.pbi RegionIN865.pbi RegionIN865.pbi RegionKR920.pbi RegionKR920.pbi RegionRU864.pbi
-build LoRaWAN_End_Node_part10.pbi : link RegionRU864.pbi RegionUS915.pbi RegionUS915.pbi soft-se.pbi soft-se.pbi utilities.pbi utilities.pbi radio.pbi radio.pbi radio_driver.pbi radio_driver.pbi radio_fw.pbi radio_fw.pbi
-build LoRaWAN_End_Node_part11.pbi : link stm32_adv_trace.pbi stm32_adv_trace.pbi stm32_lpm.pbi stm32_lpm.pbi stm32_mem.pbi stm32_mem.pbi stm32_seq.pbi stm32_seq.pbi stm32_systime.pbi stm32_systime.pbi stm32_timer.pbi stm32_timer.pbi stm32_tiny_sscanf.pbi
-build LoRaWAN_End_Node_part12.pbi : link stm32_tiny_sscanf.pbi stm32_tiny_vsnprintf.pbi stm32_tiny_vsnprintf.pbi
+build LoRaWAN_End_Node_part0.pbi : link adc.pbi dma.pbi flash_if.pbi gpio.pbi i2c.pbi main.pbi rtc.pbi stm32_lpm_if.pbi stm32wlxx_hal_msp.pbi stm32wlxx_it.pbi subghz.pbi sys_app.pbi sys_debug.pbi
+build LoRaWAN_End_Node_part1.pbi : link sys_sensors.pbi timer_if.pbi usart.pbi usart_if.pbi app_lorawan.pbi CayenneLpp.pbi lora_app.pbi lora_info.pbi radio_board_if.pbi stm32wlxx_nucleo.pbi stm32wlxx_nucleo_radio.pbi system_stm32wlxx.pbi stm32wlxx_hal.pbi
+build LoRaWAN_End_Node_part2.pbi : link stm32wlxx_hal.pbi stm32wlxx_hal_adc.pbi stm32wlxx_hal_adc.pbi stm32wlxx_hal_adc_ex.pbi stm32wlxx_hal_adc_ex.pbi stm32wlxx_hal_cortex.pbi stm32wlxx_hal_cortex.pbi stm32wlxx_hal_dma.pbi stm32wlxx_hal_dma.pbi stm32wlxx_hal_dma_ex.pbi stm32wlxx_hal_dma_ex.pbi stm32wlxx_hal_exti.pbi stm32wlxx_hal_exti.pbi
+build LoRaWAN_End_Node_part3.pbi : link stm32wlxx_hal_flash.pbi stm32wlxx_hal_flash.pbi stm32wlxx_hal_flash_ex.pbi stm32wlxx_hal_flash_ex.pbi stm32wlxx_hal_gpio.pbi stm32wlxx_hal_gpio.pbi stm32wlxx_hal_i2c.pbi stm32wlxx_hal_i2c_ex.pbi stm32wlxx_hal_pwr.pbi stm32wlxx_hal_pwr.pbi stm32wlxx_hal_pwr_ex.pbi stm32wlxx_hal_pwr_ex.pbi stm32wlxx_hal_rcc.pbi
+build LoRaWAN_End_Node_part4.pbi : link stm32wlxx_hal_rcc.pbi stm32wlxx_hal_rcc_ex.pbi stm32wlxx_hal_rcc_ex.pbi stm32wlxx_hal_rtc.pbi stm32wlxx_hal_rtc.pbi stm32wlxx_hal_rtc_ex.pbi stm32wlxx_hal_rtc_ex.pbi stm32wlxx_hal_subghz.pbi stm32wlxx_hal_subghz.pbi stm32wlxx_hal_tim.pbi stm32wlxx_hal_tim.pbi stm32wlxx_hal_tim_ex.pbi stm32wlxx_hal_tim_ex.pbi
+build LoRaWAN_End_Node_part5.pbi : link stm32wlxx_hal_uart.pbi stm32wlxx_hal_uart.pbi stm32wlxx_hal_uart_ex.pbi stm32wlxx_hal_uart_ex.pbi stm32wlxx_ll_adc.pbi stm32wlxx_ll_adc.pbi cmac.pbi cmac.pbi LmHandler.pbi LmHandler.pbi LmhpCompliance.pbi LmhpCompliance.pbi LmhpPackagesRegistration.pbi
+build LoRaWAN_End_Node_part6.pbi : link LoRaMac.pbi LoRaMac.pbi LoRaMacAdr.pbi LoRaMacAdr.pbi LoRaMacClassB.pbi LoRaMacClassB.pbi LoRaMacCommands.pbi LoRaMacCommands.pbi LoRaMacConfirmQueue.pbi LoRaMacConfirmQueue.pbi LoRaMacCrypto.pbi LoRaMacCrypto.pbi LoRaMacParser.pbi
+build LoRaWAN_End_Node_part7.pbi : link LoRaMacParser.pbi LoRaMacSerializer.pbi LoRaMacSerializer.pbi lorawan_aes.pbi lorawan_aes.pbi NvmDataMgmt.pbi NvmDataMgmt.pbi Region.pbi Region.pbi RegionAS923.pbi RegionAS923.pbi RegionAU915.pbi RegionAU915.pbi
+build LoRaWAN_End_Node_part8.pbi : link RegionBaseUS.pbi RegionBaseUS.pbi RegionCN470.pbi RegionCN470.pbi RegionCN470A20.pbi RegionCN470A20.pbi RegionCN470A26.pbi RegionCN470A26.pbi RegionCN470B20.pbi RegionCN470B20.pbi RegionCN470B26.pbi RegionCN470B26.pbi RegionCN779.pbi
+build LoRaWAN_End_Node_part9.pbi : link RegionCN779.pbi RegionCommon.pbi RegionCommon.pbi RegionEU433.pbi RegionEU433.pbi RegionEU868.pbi RegionEU868.pbi RegionIN865.pbi RegionIN865.pbi RegionKR920.pbi RegionKR920.pbi RegionRU864.pbi RegionRU864.pbi
+build LoRaWAN_End_Node_part10.pbi : link RegionUS915.pbi RegionUS915.pbi soft-se.pbi soft-se.pbi utilities.pbi utilities.pbi radio.pbi radio.pbi radio_driver.pbi radio_driver.pbi radio_fw.pbi radio_fw.pbi stm32_adv_trace.pbi
+build LoRaWAN_End_Node_part11.pbi : link stm32_adv_trace.pbi stm32_lpm.pbi stm32_lpm.pbi stm32_mem.pbi stm32_mem.pbi stm32_seq.pbi stm32_seq.pbi stm32_systime.pbi stm32_systime.pbi stm32_timer.pbi stm32_timer.pbi stm32_tiny_sscanf.pbi stm32_tiny_sscanf.pbi
+build LoRaWAN_End_Node_part12.pbi : link stm32_tiny_vsnprintf.pbi stm32_tiny_vsnprintf.pbi
 build LoRaWAN_End_Node.pbd : link LoRaWAN_End_Node_part0.pbi LoRaWAN_End_Node_part1.pbi LoRaWAN_End_Node_part2.pbi LoRaWAN_End_Node_part3.pbi LoRaWAN_End_Node_part4.pbi LoRaWAN_End_Node_part5.pbi LoRaWAN_End_Node_part6.pbi LoRaWAN_End_Node_part7.pbi LoRaWAN_End_Node_part8.pbi LoRaWAN_End_Node_part9.pbi LoRaWAN_End_Node_part10.pbi LoRaWAN_End_Node_part11.pbi LoRaWAN_End_Node_part12.pbi
 build LoRaWAN_End_Node.pbw : browsedata LoRaWAN_End_Node.pbd
 

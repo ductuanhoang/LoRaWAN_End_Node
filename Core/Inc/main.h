@@ -83,8 +83,13 @@ void Error_Handler(void);
 #define LED1_Pin GPIO_PIN_8
 #define LED1_GPIO_Port GPIOA
 
-/* USER CODE BEGIN Private defines */
 
+/* USER CODE BEGIN Private defines */
+// UART1
+#define USART1x_RX_Pin GPIO_PIN_7
+#define USART1x_RX_GPIO_Port GPIOB
+#define USART1x_TX_Pin GPIO_PIN_6
+#define USART1x_TX_GPIO_Port GPIOB
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
